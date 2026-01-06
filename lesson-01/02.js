@@ -4,6 +4,13 @@
   Факториал числа 𝑛 (обозначается как 𝑛!)  — это произведение всех натуральных чисел от 1 до 𝑛 включительно.
   Например, факториал числа 3 это 1 * 2 * 3 (6).
 */
+let number = 1;
+let multiplications = 1;
+
+while (number <= 10) {
+  multiplications = multiplications * number++
+}
 
 // your code
-let factorial
+let factorial = multiplications
+console.log(multiplications);

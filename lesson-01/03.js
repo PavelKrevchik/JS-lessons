@@ -3,6 +3,21 @@
 
   Вам понадобиться оператор остатка от деления %. Например, выражение 5 % 2 вернёт остаток 1.
 */
+let number = 1;
+let sumNumber = 0;
+
+while (number <= 20) {
+  if (number % 2 === 1) {
+    sumNumber = number + sumNumber;
+    
+  } else {
+    number++;
+  }
+   
+}
+
+
 
 // your code
-let sum
+let sum = sumNumber;
+console.log(sum);

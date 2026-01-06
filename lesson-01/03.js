@@ -3,17 +3,15 @@
 
   Вам понадобиться оператор остатка от деления %. Например, выражение 5 % 2 вернёт остаток 1.
 */
-let number = 1;
-let sumNumber = 0;
 
-while (number <= 20) {
-  if (number % 2 === 1) {
-    sumNumber = number + sumNumber;
-    
-  } else {
-    number++;
+
+let sumNumber = 0
+let number = 1
+while(number <= 21) {
+  if (number % 2 != 0) {
+    sumNumber = sumNumber + number
   }
-   
+  number++
 }
 
 

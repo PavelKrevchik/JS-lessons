@@ -9,7 +9,7 @@
 
 // тестовые данные (значения можно менять)
 const isAdmin = true
-const isVerifiedUser = true
+const isVerifiedUser = false
 const hasSpecialPermission = true
 const hasTemporaryPass = false
 
@@ -21,9 +21,11 @@ if (isAdmin || isVerifiedUser) {
    if (hasSpecialPermission || hasTemporaryPass) {
       alert("Спец допуск получен")
       isAccess = true
+   } else {
+      alert("Спец допуск не получен")
    }
 } else {
-      alert("Статус не подтвержден!")
+      alert("Статус не подтвержден! Спец допуск не получен")
 }
 
 console.log(isAccess);

@@ -16,16 +16,9 @@ const hasTemporaryPass = false
 let isAccess = false
 
 // your code
-if (isAdmin || isVerifiedUser) {
-  alert("Статус подтвержден")
-   if (hasSpecialPermission || hasTemporaryPass) {
-      alert("Спец допуск получен")
-      isAccess = true
-   } else {
-      alert("Спец допуск не получен")
-   }
+if ((isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass)) {
+   isAccess = true
+   console.log(isAccess);
 } else {
-      alert("Статус не подтвержден! Спец допуск не получен")
+   console.log(isAccess);
 }
-
-console.log(isAccess);

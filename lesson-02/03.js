@@ -4,27 +4,27 @@
  * Результат сохраните в переменной grade.
  */
 
-// const score = 70 не соглашусь с const так как число от 0 до 100 может быть любым // тестовое значение, можно изменять
+const score = 70 // тестовое значение, можно изменять
 
-let score = Math.floor(Math.random() * 100)
+// let score = Math.floor(Math.random() * 100)
 let grade
 // your code
 console.log(score);
 
 if (score >= 0 && score <=49) {
    grade = score 
-   console.log(grade, "F");
+   console.log("F");
 } else if (score >= 50 && score <=69) {
    grade = score 
-   console.log(grade, "D");
+   console.log("D");
 } else if (score >= 70 && score <=79) {
    grade = score 
-   console.log(grade, "C");
+   console.log("C");
 } else if (score >= 80 && score <=89) {
    grade = score 
-   console.log(grade, "B");
+   console.log("B");
 } else {
    grade = score 
-   console.log(grade, "A");
+   console.log("A");
 }
 

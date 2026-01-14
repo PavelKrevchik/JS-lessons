@@ -4,9 +4,9 @@
  * Результат сохраните в переменной grade.
  */
 
-// const score = 70 // тестовое значение, можно изменять
+const score = 70 // тестовое значение, можно изменять
 
-let score = Math.floor(Math.random() * 100)
+// let score = Math.floor(Math.random() * 100)
 let grade
 // your code
 console.log(score);

@@ -3,4 +3,9 @@
 function calculateAverage(number1, number2) {
    let arithmetic 
    arithmetic = (number1 + number2) / 2
+   return arithmetic
 }
+
+let arith = calculateAverage(10, 20)
+console.log(arith);
+

@@ -12,5 +12,15 @@
 Пример использования:
 includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 */
+function includesElement(array, element) {
+   let newArray = false
+   for (let i = 0; i < array.length; i++) {
+      if (array[i] === element) {
+         newArray = true
+      } 
+   }
+   return newArray;
+}
 
-function includesElement() {}
+
+console.log(includesElement([1, 2, 3], 4));

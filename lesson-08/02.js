@@ -3,9 +3,16 @@
  * Если строка является числом, функция должна возвращать true, в противном случае - false.
  */
 
-function isNumeric(str) {
-  // your code
+function isNumeric(str) { 
+  if (str == Number(str) && str != " ") {
+    return true
+  } else {
+    return false
+  }
 }
+
+console.log(isNumeric("12.5"));
+
 
 // console.log(isNumeric("123")) // Ожидаемый результат: true
 // console.log(isNumeric("12.3")) // Ожидаемый результат: true

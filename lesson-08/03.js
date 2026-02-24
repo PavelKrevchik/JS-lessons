@@ -10,5 +10,13 @@
 */
 
 function truncate(str, maxLength) {
-  // your code
+  const array = str.split("")
+  if (array.length > maxLength) {
+    array.splice(maxLength)
+    array.push("...")
+  }
+  return array.join("")
 }
+
+console.log(truncate("Вот, что мне действительно нравится в этом", 20));
+

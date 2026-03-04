@@ -33,11 +33,41 @@ let isTimerStarted = false
 let timerId
 
 startButton.addEventListener('click', () => {
-  let counter = 3
+  
+  if (isTimerStarted) return;
 
-  // your code
-})
+  let counter = 3;                
+  countdownDisplay.textContent = counter;
 
+  isTimerStarted = true;           
+
+  
+  timerId = setInterval(() => {
+    counter -= 1;                  
+
+    if (counter > 0) {
+      
+      countdownDisplay.textContent = counter;
+    } else {
+      
+      countdownDisplay.textContent = '🚀';
+      clearInterval(timerId);
+      isTimerStarted = false;
+      timerId = null;
+    }
+  }, 1000);
+});
+
+// ---------- Обработчик «Отмена» ----------
 cancelButton.addEventListener('click', () => {
-  // your code
-})
+ 
+  if (!isTimerStarted) return;
+
+  
+  clearInterval(timerId);
+  timerId = null;
+  isTimerStarted = false;
+
+  
+  countdownDisplay.textContent = 'Отменено';
+});
